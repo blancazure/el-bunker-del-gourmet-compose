@@ -9,7 +9,7 @@ import (
     "net/http"
     "os"
     "strings"
-    "time" 
+    "time"
     _ "github.com/go-sql-driver/mysql"
 )
 
@@ -41,7 +41,7 @@ func conectarBD() {
         log.Fatal(err)
     }
 
-    dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s",
+    dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
         strings.TrimSpace(string(dbUser)),
         strings.TrimSpace(string(dbPassword)),
         os.Getenv("DB_HOST"),
@@ -66,7 +66,6 @@ func conectarBD() {
     }
 
     log.Fatalf("No se pudo conectar a la base de datos después de %d intentos: %v", maxRetries, err)
-
 }
 
 // Middleware para habilitar CORS
@@ -84,7 +83,7 @@ func habilitarCORS(next http.Handler) http.Handler {
 
 // Endpoint para buscar recetas
 func buscarRecetas(w http.ResponseWriter, r *http.Request) {
-    w.Header().Set("Content-Type", "application/json")
+    w.Header().Set("Content-Type", "application/json; charset=utf-8")
     criterio := r.URL.Query().Get("q")
     query := `SELECT id, nombre, tiempo_preparacion, dificultad, imagen, descripcion, ingredientes FROM recetas WHERE nombre LIKE ? OR descripcion LIKE ? OR ingredientes LIKE ?`
     rows, err := db.Query(query, "%"+criterio+"%", "%"+criterio+"%", "%"+criterio+"%")
@@ -110,7 +109,7 @@ func buscarRecetas(w http.ResponseWriter, r *http.Request) {
 
 // Endpoint para obtener una receta por ID
 func obtenerReceta(w http.ResponseWriter, r *http.Request) {
-    w.Header().Set("Content-Type", "application/json")
+    w.Header().Set("Content-Type", "application/json; charset=utf-8")
     id := strings.TrimPrefix(r.URL.Path, "/receta/")
     query := `SELECT id, nombre, tiempo_preparacion, dificultad, imagen, descripcion, ingredientes, preparacion FROM recetas WHERE id = ?`
     var receta Receta

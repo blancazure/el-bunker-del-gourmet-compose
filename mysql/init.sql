@@ -1,7 +1,7 @@
--- Crear la base de datos
-CREATE DATABASE IF NOT EXISTS recetas_db;
+-- Crear la base de datos con codificación UTF-8
+CREATE DATABASE IF NOT EXISTS recetas_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
--- Se crea el usuario de acceso a la basae de datos y se le asignan los privilegios
+-- Se crea el usuario de acceso a la base de datos y se le asignan los privilegios
 CREATE USER 'usuario-mysql'@'%' IDENTIFIED BY 'clave-usuario-mysql';
 GRANT ALL PRIVILEGES ON recetas_db.* TO 'usuario-mysql'@'%';
 FLUSH PRIVILEGES;
@@ -9,16 +9,16 @@ FLUSH PRIVILEGES;
 -- Usar la base de datos recién creada
 USE recetas_db;
 
--- Crear la tabla de recetas
+-- Crear la tabla de recetas con codificación UTF-8
 CREATE TABLE IF NOT EXISTS recetas (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255) NOT NULL,
-    tiempo_preparacion VARCHAR(100) NOT NULL,
-    dificultad VARCHAR(50) NOT NULL,
-    imagen VARCHAR(500) NOT NULL,
-    descripcion TEXT NOT NULL,
-    ingredientes TEXT NOT NULL,
-    preparacion TEXT NOT NULL
+    nombre VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    tiempo_preparacion VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    dificultad VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    imagen VARCHAR(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    descripcion TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    ingredientes TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+    preparacion TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
 );
 
 -- Insertar recetas gallegas en la tabla

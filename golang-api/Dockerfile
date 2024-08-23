@@ -4,15 +4,18 @@ FROM golang:1.20-alpine AS build
 # Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar los archivos del proyecto al contenedor
+# Copiar y descargar las dependencias antes de copiar todo el código
+COPY go.mod go.sum ./
+RUN go mod tidy
+
+# Copiar el resto del código fuente
 COPY . .
 
 # Compilar la aplicación de Golang
-RUN go mod tidy
 RUN go build -o golang-api
 
 # Usar una imagen mínima para correr la aplicación compilada
-FROM alpine:latest
+FROM blancazure/alpine:3.20.2
 
 # Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /root/

@@ -10,7 +10,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'), {
+        headers: {
+            'Content-Type': 'text/html; charset=utf-8'
+        }
+    });
 });
 
 // Ruta para buscar recetas

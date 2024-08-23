@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8080';
+const API_URL = 'http://localhost:50301';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Mostrar todas las recetas cuando la página se carga por primera vez

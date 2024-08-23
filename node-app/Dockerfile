@@ -1,5 +1,5 @@
 # Usar una imagen oficial de Node.js como imagen base
-FROM node:18-alpine
+FROM blancazure/node:18-alpine
 
 # Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /usr/src/app

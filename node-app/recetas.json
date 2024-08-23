@@ -1,0 +1,77 @@
+[
+  {
+    "nombre": "Tacos al Pastor",
+    "tiempo_preparacion": "30 minutos",
+    "dificultad": "Media",
+    "imagen": "https://c.pxhere.com/photos/85/44/food_salad_greens_sheet_vegetables_nutrition_tomato_meat-1204406.jpg!d",
+    "descripcion": "Deliciosos tacos al pastor con piña y cebolla, servidos con salsa roja.",
+    "ingredientes": [
+      "500g de carne de cerdo",
+      "2 piñas",
+      "1 cebolla",
+      "Tortillas de maíz",
+      "Salsa roja"
+    ],
+    "preparacion": "<p>Cortar la carne de cerdo en trozos pequeños.</p><p>Marinar la carne con especias.</p><p>Cocinar la carne hasta que esté dorada.</p><p>Cortar la piña y la cebolla en rodajas.</p><p>Servir la carne en tortillas con piña, cebolla y salsa roja.</p><p>Cortar la carne de cerdo en trozos pequeños.</p><p>Marinar la carne con especias.</p><p>Cocinar la carne hasta que esté dorada.</p><p>Cortar la piña y la cebolla en rodajas.</p><p>Servir la carne en tortillas con piña, cebolla y salsa roja.</p>"
+  },
+  {
+    "nombre": "Enchiladas Verdes",
+    "tiempo_preparacion": "45 minutos",
+    "dificultad": "Media",
+    "imagen": "https://c.pxhere.com/photos/85/44/food_salad_greens_sheet_vegetables_nutrition_tomato_meat-1204406.jpg!d",
+    "descripcion": "Enchiladas rellenas de pollo, bañadas en salsa verde y cubiertas con queso derretido.",
+    "ingredientes": [
+      "500g de pollo",
+      "Tortillas de maíz",
+      "Salsa verde",
+      "Queso",
+      "Cilantro"
+    ],
+    "preparacion": "<p>Cocinar el pollo y desmenuzarlo.</p><p>Envolver el pollo en tortillas.</p><p>Bañar las tortillas en salsa verde.</p><p>Cubrir con queso y hornear hasta que el queso esté derretido.</p><p>Decorar con cilantro fresco.</p>"
+  },
+  {
+    "nombre": "Guacamole",
+    "tiempo_preparacion": "10 minutos",
+    "dificultad": "Fácil",
+    "imagen": "https://c.pxhere.com/photos/85/44/food_salad_greens_sheet_vegetables_nutrition_tomato_meat-1204406.jpg!d",
+    "descripcion": "Un clásico guacamole con aguacate, tomate, cebolla y un toque de limón.",
+    "ingredientes": [
+      "3 aguacates",
+      "1 tomate",
+      "1 cebolla",
+      "1 limón",
+      "Cilantro"
+    ],
+    "preparacion": "<p>Pelar y triturar los aguacates en un bol.</p><p>Picar el tomate y la cebolla y añadirlos al bol.</p><p>Exprimir el jugo del limón sobre la mezcla.</p><p>Añadir cilantro picado al gusto.</p><p>Mezclar bien y servir.</p>"
+  },
+  {
+    "nombre": "Mole Poblano",
+    "tiempo_preparacion": "120 minutos",
+    "dificultad": "Difícil",
+    "imagen": "https://c.pxhere.com/photos/85/44/food_salad_greens_sheet_vegetables_nutrition_tomato_meat-1204406.jpg!d",
+    "descripcion": "Tradicional mole poblano, una mezcla perfecta de chiles, chocolate y especias.",
+    "ingredientes": [
+      "1 pollo",
+      "Chiles secos",
+      "Chocolate",
+      "Especias",
+      "Tortillas"
+    ],
+    "preparacion": "<p>Cocinar el pollo y reservar.</p><p>Tostar los chiles secos y molerlos junto con las especias y el chocolate.</p><p>Cocinar la mezcla a fuego lento, añadiendo caldo hasta obtener una salsa espesa.</p><p>Bañar el pollo con la salsa y servir con tortillas.</p>"
+  },
+  {
+    "nombre": "Chiles en Nogada",
+    "tiempo_preparacion": "90 minutos",
+    "dificultad": "Difícil",
+    "imagen": "https://c.pxhere.com/photos/85/44/food_salad_greens_sheet_vegetables_nutrition_tomato_meat-1204406.jpg!d",
+    "descripcion": "Chiles rellenos de picadillo, bañados en salsa de nogada y adornados con granada.",
+    "ingredientes": [
+      "4 chiles poblanos",
+      "300g de picadillo",
+      "Nueces",
+      "Granada",
+      "Crema"
+    ],
+    "preparacion": "<p>Asar los chiles poblanos y pelarlos.</p><p>Rellenar los chiles con picadillo.</p><p>Preparar la salsa de nogada con nueces y crema.</p><p>Bañar los chiles con la salsa y decorar con granada.</p>"
+  }
+]
